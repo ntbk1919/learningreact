@@ -27,8 +27,14 @@ this.setState({
   ninjas:ninjas
 })
 }
-
-   render(){
+componentDidMount(){
+  console.log('Component Mounted')
+}
+componentDidUpdate(prevProps,prevState){
+  console.log('Component updated')
+  console.log(prevProps,prevState)
+}   
+render(){
   return (
     <div className="App">
       <h1>My first React App!</h1>
