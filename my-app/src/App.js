@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
 import Ninjas from'./ninjas';
 import AddNinja from './AddNinja';
+
 class App extends Component {
+ 
  state ={
   ninjas:[
     {name:'RYU',age:30,belt:'black',id:1},
@@ -31,6 +33,7 @@ this.setState({
     <div className="App">
       <h1>My first React App!</h1>
       <p>Welcome xD</p>
+ 
       <Ninjas deleteNinja={this.deleteNinja} ninjas={this.state.ninjas}/>
       <AddNinja addNinja={this.addNinja}/>
    
